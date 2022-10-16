@@ -1,0 +1,118 @@
+% !TeX root = ./main.tex
+%-------------------------------------
+% LaTeX Resume for Software Engineers
+% Author : Leslie Cheng
+% License : MIT
+%-------------------------------------
+
+%-------------------------------------------------- BEGIN HERE --------------------------------------------------
+
+%---------------------------------------------------- HEADER ----------------------------------------------------
+\headertype{\linkedin}{\github}{\website}{\email}{}{} % Set the order of items here
+% \headertype{\linkedin}{\github}{\website}{\phone}{\email}{} % Set the order of items here
+
+%-------------------------------------------------- EDUCATION --------------------------------------------------
+
+\section{}{Education\hspace{480pt}}
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Software Engineering MASc.}{Sep. 2020 -- Dec. 2022}
+      {McMaster University}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem {\textbf{Thesis:} Synchronizing Real-Time Hardware Control Across TSN Capable Networks} 
+    \resumeItemListEnd
+  \resumeEntryEnd
+  % \vspace{-15pt}
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Mechatronics Engineering \& Management B.Eng.}{Sep. 2014 -- April 2020}
+      {McMaster University}{Hamilton, ON}
+  \resumeEntryEnd
+
+%-------------------------------------------------- EXPERIENCE --------------------------------------------------
+
+\section{}{Experience\hspace{473pt}}
+
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Graduate Research Assistant}{May 2020 -- Present}
+      {McMaster Automotive Resource Centre}{Hamilton, ON}
+    \resumeItemListStart
+        \resumeItem{Worked closely with NXP Semiconductor and an automotive OEM on migrating an existing motor control application to a centralized architecture}
+        \resumeItem {Developed firmware for pre-production hardware (NXP S32S \& S32K3) configuring peripherals (PWM, ADC, Timer, Trigger Unit, etc.) and setting up clock and pin multiplexing targeting a motor control application}
+        \resumeItem{Implemented time synchronization using Time Sensitive Networking (TSN) over Automotive Ethernet}
+        \resumeItem{Used Lauterbach TRACE32 with JTAG debugging and ETM tracing during development for testing and troubleshooting hardware and software}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  % \vspace{-4pt}
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Embedded Systems Specialist}{Oct. 2018 -- Aug. 2020}
+      {NEUDOSE Satellite Team}{Hamilton, ON}
+    \resumeItemListStart
+      \resumeItem {Developed CAN drivers for the satellite’s On-Board Computer and integrated them into a network stack (CSP)}
+      \resumeItem {Contributed to the development of the On-Board Computer's flight software in C running on FreeRTOS}
+      \resumeItem {Designed a Printed Circuit Board using Altium Designer to serve as a prototype for testing flight software}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Undergraduate Research Assistant (Model Based Software)}{May 2017 -- April. 2020}
+      {McMaster Centre for Software Certification}{Hamilton, ON}
+    \resumeItemListStart
+        \resumeItem {Developed a model based Pacemaker following Boston Scientific's Pacemaker System Specification using MATLAB Simulink running on an embedded target NXP FRDM-K64F}
+        \resumeItem {Implemented UART communication in MATLAB Simulink configuring and monitoring the Pacemaker in real-time using a python graphical user interface (GUI)} 
+        \resumeItem{Created an automated hardware testing and verification including Arm Mbed based firmware in C++ and python scripts communicating with the hardware over UART}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  % \vspace{-4pt}
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Instructional Assistant Intern (IAI)}{May 2018 -- April 2019}
+      {McMaster University}{Hamilton, ON}
+    \resumeItemListStart
+    % \resumeItem {Presented Graphics Design (CAD) and Programming (Python) concepts to over 100 students weekly}
+      \resumeItem {Developed Raspberry Pi I$^2$C drivers for an Inertial Measurement Unit (IMU) and a pulse oximeter}
+      \resumeItem{Created a python testing tool and a Golang server providing students with feedback on python assignments}
+      \resumeItem{Setup docker containers to automate the print submission and monitoring process on 3D printers}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+  % \vspace{-4pt}
+
+  \newpage
+
+%-------------------------------------------------- PROJECTS --------------------------------------------------
+
+\section{}{Projects\hspace{490pt}}
+
+  \resumeEntryStart
+    \resumeEntryTD
+      {RETINA (Realtime Indoor Navigation Assistant)}{Capstone Project}
+    \resumeItemListStart
+      \resumeItem {A navigation system to assist people with visual impairment navigate buildings utilizing Ultra-Wide Band (UWB) technology with sub-meter precision}
+    \resumeItemListEnd
+  \resumeEntryEnd
+  % \vspace{-8pt}
+  \resumeEntryStart
+    \resumeEntryTD
+      {Booky}{DeltaHacks Hackathon}
+    \resumeItemListStart
+      \resumeItem {A Cross-Platform mobile app (iOS \& Android) that allows the user to search for books by using a picture of the book using Google Cloud Services.}
+    \resumeItemListEnd
+  \resumeEntryEnd
+  % \vspace{-2pt}
+%-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
+\section{}{Skills\hspace{500pt}}
+ \resumeEntryStart
+  \resumeEntryS{Languages \hspace{26pt}} {C, Python, C++, ARM Assembly, Java, Dart, Verilog, SQL}
+  \resumeEntryS{Tools \hspace{52pt}} {CMake, GDB, OpenOCD, Git, Docker}
+  \resumeEntryS{Software \hspace{34pt}} {MATLAB, Simulink, Altium Designer, Lauterbach TRACE32}
+  \resumeEntryS{Hardware \hspace{30pt}} {ARM Cortex-M (STM32, NXP S32K3), ARM Cortex-R (NXP S32S24), PowerPC (NXP MPC5777C), FPGA}
+  \resumeEntryS{Communication } {CAN, Automotive Ethernet (TSN), UART, SPI, I2C, MQTT, TCP/IP}
+ \resumeEntryEnd
