@@ -8,8 +8,7 @@
 %-------------------------------------------------- BEGIN HERE --------------------------------------------------
 
 %---------------------------------------------------- HEADER ----------------------------------------------------
-\headertype{\linkedin}{\github}{\website}{\email}{}{} % Set the order of items here
-% \headertype{\linkedin}{\github}{\website}{\phone}{\email}{} % Set the order of items here
+\IfFileExists{secrets.tex}{\headertype{\linkedin}{\github}{\website}{\phone}{\email}}{\headertype{\linkedin}{\github}{\website}{\email}} % Set the order of items here
 
 %-------------------------------------------------- EDUCATION --------------------------------------------------
 
@@ -40,9 +39,9 @@
     {Indie Semiconductor}{Toronto, ON}
   \resumeItemListStart
       \resumeItem {Designed and developed customized software and hardware solutions to meet customer requirements}
-      \resumeItem {Implemented features within image sensor drivers of a camera vision processor SoC}
+      \resumeItem {Implemented features within image sensor drivers of a camera video processor SoC}
       \resumeItem {Developed tools for extracting, parsing and verification of embedded data from a video stream}
-      \resumeItem {Created host-side tools for communicating with the camera vision processor SoC via I$^2$C}
+      \resumeItem {Created host-side tools for communicating with the camera video processor SoC via I$^2$C}
       \resumeItem {Conducted functional safety and timing analyses to ensure industry standards compliance}
   \resumeItemListEnd
   \resumeEntryEnd
