@@ -89,7 +89,7 @@
 % Custom commands
 
 % Sections
-\renewcommand{\section}[2]{\vspace{5pt}
+\renewcommand{\section}[2]{\vspace{12pt}
   \colorbox{secondary}{\strut\hspace{3pt}\color{white}\raggedbottom\normalsize\textbf{{#2}}}
 }
 
@@ -104,14 +104,14 @@
 % Resume item
 \renewcommand{\labelitemii}{\bulletstyle}
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
+  \item{
+    {#1}
   }
 }
 
 % Entry with title, subheading, date(s), and location
 \newcommand{\resumeEntryTSDL}[4]{
-  \vspace{-1pt}\item[]
+  \item[]
     \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
       \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
       \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
