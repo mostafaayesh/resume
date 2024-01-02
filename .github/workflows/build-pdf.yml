@@ -22,4 +22,27 @@ jobs:
           title: "Resume"
           files: |
             main.pdf
+
+      - name: Commit Artifact to Portfolio
+        uses: actions/checkout@v4
+        with:
+          repository: mostafaayesh/portfolio
+          path: 'portfolio'
+          token: ${{ secrets.PFSECRET }}
+
+      - name: Copy Resume to Static
+        run: cp ./main.pdf portfolio/static/pdf/resume.pdf
       
+      - name: Copy Resume to Assets
+        run: cp ./main.pdf portfolio/assets/pdf/resume.pdf
+
+      - name: Commit and Push
+        run: |
+          cd portfolio
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add static/ assets/
+          git commit -m "Update Resume"
+          git push
+
+          
